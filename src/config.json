@@ -1,0 +1,5 @@
+{
+  "REACT_APP_CRYPTO_API_URL": "https://coinranking1.p.rapidapi.com",
+  "REACT_APP_CRYPTO_RAPIDAPI_HOST": "coinranking1.p.rapidapi.com",
+  "REACT_APP_RAPIDAPI_KEY": "55b82032d6msh35ec620e8eb09b1p1c0988jsn7195c3618d42"
+}
