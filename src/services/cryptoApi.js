@@ -13,7 +13,7 @@ export const cryptoApi = createApi({
   baseQuery: fetchBaseQuery({ baseUrl: Config.REACT_APP_CRYPTO_API_URL }),
   endpoints: (builder) => ({
     getCryptos: builder.query({
-      query: (count) => createRequest(`/coins?limit=$(count)`),
+      query: (count) => createRequest(`/coins?limit=${count}`),
     }),
     getCryptoDetails: builder.query({
       query: (coinId) => createRequest(`/coins/${coinId}`),
