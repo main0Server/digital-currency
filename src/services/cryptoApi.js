@@ -1,5 +1,5 @@
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
-import Config from "../config.json";
+import Config from "../.config.json";
 
 const cryptoApiHeaders = {
   "x-rapidapi-host": Config.REACT_APP_CRYPTO_RAPIDAPI_HOST,

@@ -1,6 +1,6 @@
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 
-import Config from "../config.json";
+import Config from "../.config.json";
 
 const cryptoNewsHeaders = {
   "x-bingapis-sdk": Config.REACT_APP_SDK,
