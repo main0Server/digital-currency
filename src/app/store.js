@@ -5,14 +5,15 @@ import { setupListeners } from "@reduxjs/toolkit/query";
 
 // Api
 import { cryptoApi } from "../services/cryptoApi";
+import { cryptoNewsApi } from "../services/cryptoNewsApi";
 
 export default configureStore({
   reducer: {
     [cryptoApi.reducerPath]: cryptoApi.reducer,
-
+    [cryptoNewsApi.reducerPath]: cryptoNewsApi.reducer,
   },
   middleware: (getDefaultMiddleware) =>
-    getDefaultMiddleware().concat(cryptoApi.middleware),
+    getDefaultMiddleware().concat(cryptoApi.middleware, cryptoNewsApi.middleware),
 });
 
-setupListeners(configureStore.dispatch)
+setupListeners(configureStore.dispatch);
