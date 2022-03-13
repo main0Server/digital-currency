@@ -15,7 +15,7 @@ const App = () => {
       <div className="NavBar">
         <Navbar />
       </div>
-      <div className="main-app col-md-9 ms-sm-auto col-lg-10">
+      <div className="main-app col-md-9 ms-sm-auto col-lg-10 p-1">
         <Switch>
           <Route exact path="/">
             <Homepage />
@@ -33,10 +33,10 @@ const App = () => {
             <News />
           </Route>
         </Switch>
-      </div>
 
-      <div className="footer">
-        <Footer/>
+        <div className="footer">
+          <Footer />
+        </div>
       </div>
     </div>
   );
